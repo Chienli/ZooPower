@@ -27,12 +27,13 @@ class NewRunController: UIViewController , MKMapViewDelegate{
     private var distanceRunning = false
     var timerCount = 0
     var distanceCount = 0.0
-    
+    var sumdistance : Double = 0.0
     private var distance = Measurement(value: 0, unit: UnitLength.meters)
     private var oceanDistance = Measurement(value: 0, unit: UnitLength.meters)
      private var grassLandDistance = Measurement(value: 0, unit: UnitLength.meters)
      private var rainForestDistance = Measurement(value: 0, unit: UnitLength.meters)
     private var locationList: [CLLocation] = []
+    var sum : Double = 0.0
     //var demoLocationManager : CLLocationManager!
     var currentID = Auth.auth().currentUser?.uid
     var calorie : Double?
@@ -233,9 +234,19 @@ class NewRunController: UIViewController , MKMapViewDelegate{
             let roundedRainForest = Double(round(1000 * self.rainForestDistance.value) / 1000)
             let roundedPace = Double(round(1000 * pace!) / 1000)
             let roundedCalorie = Double(round(100 * self.calorie!) / 100)
-      
             //上傳跑步記錄到firebase
             let record = ["distance" : roundedDistance ,"duration" : self.seconds ,"date" : ServerValue.timestamp() ,"pace" : roundedPace , "calorie" : roundedCalorie , "oceanDistance" : roundedOceanDistance , "grassLandDistance" : roundedGrassLandDistance , "rainForestDistance" : roundedRainForest] as [AnyHashable : Any]
+            
+            Database.database().reference().child("Value/\(self.currentID!)/sum").observeSingleEvent(of: .value, with: { (snapshot) in
+                var value = snapshot.value as? Double
+                if value == nil{
+                    value = 0.0
+                }
+                var sum = Double(value!)
+                sum = Double(round(1000 * sum + roundedDistance) / 1000)
+                Database.database().reference().child("Value/\(self.currentID!)").updateChildValues(["sum":sum])
+            })
+            
             Database.database().reference().child("Records/\(self.currentID!)").childByAutoId().setValue(record)
         })
 
