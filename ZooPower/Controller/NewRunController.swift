@@ -244,7 +244,8 @@ class NewRunController: UIViewController , MKMapViewDelegate{
                 }
                 var sum = Double(value!)
                 sum = Double(round(1000 * sum + roundedDistance) / 1000)
-                Database.database().reference().child("Value/\(self.currentID!)").updateChildValues(["sum":sum])
+                let valuedata = ["sum" : sum] as [String : AnyObject]
+                Database.database().reference().child("Value/\(self.currentID!)").updateChildValues(valuedata)
             })
             
             Database.database().reference().child("Records/\(self.currentID!)").childByAutoId().setValue(record)
