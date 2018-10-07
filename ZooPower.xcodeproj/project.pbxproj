@@ -41,6 +41,7 @@
 		1FDAA8D021168A850040A204 /* ZooMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAA8CF21168A850040A204 /* ZooMainCell.swift */; };
 		1FF899572114C20300E6CD11 /* UIImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF899562114C20300E6CD11 /* UIImageViewExtention.swift */; };
 		1FFFE357210D515400E95C4B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFE356210D515400E95C4B /* LoginController.swift */; };
+		366ABFC32168AA600059D84A /* ValueviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366ABFC22168AA600059D84A /* ValueviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		1FDAA8CF21168A850040A204 /* ZooMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooMainCell.swift; sourceTree = "<group>"; };
 		1FF899562114C20300E6CD11 /* UIImageViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtention.swift; sourceTree = "<group>"; };
 		1FFFE356210D515400E95C4B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		366ABFC22168AA600059D84A /* ValueviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueviewController.swift; sourceTree = "<group>"; };
 		9A15D8815FFE3780CDE17E70 /* Pods-ZooPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooPower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZooPower/Pods-ZooPower.debug.xcconfig"; sourceTree = "<group>"; };
 		B95D6D30A899BDCE2AEBC6B3 /* Pods-ZooPower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooPower.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZooPower/Pods-ZooPower.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 				1F62E272212870D800D520A8 /* RecordController.swift */,
 				1F3B67BD21451367008C67E1 /* distancePopController.swift */,
 				1F3B67BF214516EE008C67E1 /* timePopController.swift */,
+				366ABFC22168AA600059D84A /* ValueviewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				1F92CE142118384900BCB937 /* ZooCollectionController.swift in Sources */,
 				1F62E275212872C500D520A8 /* RecordCell.swift in Sources */,
 				1FBCE19B212424820030764C /* RunDetailsController.swift in Sources */,
+				366ABFC32168AA600059D84A /* ValueviewController.swift in Sources */,
 				1F3B67C0214516EE008C67E1 /* timePopController.swift in Sources */,
 				1FFFE357210D515400E95C4B /* LoginController.swift in Sources */,
 				1F999E3F2116199000C9A1C0 /* ZooController.swift in Sources */,

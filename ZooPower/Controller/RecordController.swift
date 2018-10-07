@@ -19,7 +19,7 @@ class RecordController: UITableViewController {
     var days = 15
     var aimedDistance = 100.0
     var ref : DatabaseReference?
-    var currenID = Auth.auth().currentUser?.uid
+    var currentID = Auth.auth().currentUser?.uid
     var timer = Timer()
     var date : [String] = []
    // var location = []
@@ -49,7 +49,7 @@ class RecordController: UITableViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.isNavigationBarHidden = true
-        Database.database().reference().child("Records/\(currenID!)").queryOrderedByKey().observe(.childAdded) { (snapshot, nil) in
+        Database.database().reference().child("Records/\(currentID!)").queryOrderedByKey().observe(.childAdded) { (snapshot, nil) in
             let value = snapshot.value as? [String : AnyObject]
             
             //時間戳記格式化
@@ -63,7 +63,6 @@ class RecordController: UITableViewController {
             let oceanDistanceString = Double(round((value!["oceanDistance"] as! Double / 1000) * 1000) / 1000)
             let grassLandDistanceString = Double(round((value!["grassLandDistance"] as! Double / 1000) * 1000) / 1000)
             let rainForestDistanceString = Double(round((value!["rainForestDistance"] as! Double / 1000) * 1000) / 1000)
-
             let durationString = FormatDisplay.time(value!["duration"] as! Int)
             let paceString = Double(round((((value!["duration"] as! Double) / 60) / distanceString) * 100) / 100)
             let caloriesString = Double(round((value!["calorie"] as! Double) * 100) / 100)
@@ -81,7 +80,6 @@ class RecordController: UITableViewController {
             self.mapView.isScrollEnabled = false
             self.mapView.isPitchEnabled = false
             self.mapView.isRotateEnabled = false
-            
             if self.run != nil {
                 self.loadMap()
             }else{
@@ -127,7 +125,7 @@ class RecordController: UITableViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.counter), userInfo: nil, repeats: true)
         
         let currrntTimestamp = NSDate().timeIntervalSince1970
-        aimedSetting = Database.database().reference().child("Records/\(currenID!)").observe(.childAdded) { (snapshot) in
+        aimedSetting = Database.database().reference().child("Records/\(currentID!)").observe(.childAdded) { (snapshot) in
             let values = snapshot.value as! [String : AnyObject]
             let distance = (values["distance"] as! Double) / 1000
             let recordsTimestamp = values["date"] as! Double / 1000
@@ -156,7 +154,7 @@ class RecordController: UITableViewController {
         distanceSlider.setValue(1.0 ,animated: true)
         distanceLabel.text = "0.0"
         distanceSlider.isEnabled = true
-        Database.database().reference().child("Records/\(currenID!)").removeObserver(withHandle: aimedSetting!)
+        Database.database().reference().child("Records/\(currentID!)").removeObserver(withHandle: aimedSetting!)
         
         daysStartButton.isHidden = false
         daysSlider.isEnabled = true
