@@ -23,7 +23,6 @@
 		1F62E273212870D800D520A8 /* RecordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62E272212870D800D520A8 /* RecordController.swift */; };
 		1F62E275212872C500D520A8 /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F62E274212872C500D520A8 /* RecordCell.swift */; };
 		1F73039A210D4E610014BE1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F730399210D4E610014BE1D /* AppDelegate.swift */; };
-		1F73039F210D4E610014BE1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73039D210D4E610014BE1D /* Main.storyboard */; };
 		1F7303A1210D4E620014BE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7303A0210D4E620014BE1D /* Assets.xcassets */; };
 		1F7303A4210D4E620014BE1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7303A2210D4E620014BE1D /* LaunchScreen.storyboard */; };
 		1F7303AC210D500D0014BE1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F7303AB210D500D0014BE1D /* GoogleService-Info.plist */; };
@@ -41,7 +40,8 @@
 		1FDAA8D021168A850040A204 /* ZooMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDAA8CF21168A850040A204 /* ZooMainCell.swift */; };
 		1FF899572114C20300E6CD11 /* UIImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF899562114C20300E6CD11 /* UIImageViewExtention.swift */; };
 		1FFFE357210D515400E95C4B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFE356210D515400E95C4B /* LoginController.swift */; };
-		366ABFC32168AA600059D84A /* ValueviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366ABFC22168AA600059D84A /* ValueviewController.swift */; };
+		364B78172170A208006BCA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364B78162170A208006BCA01 /* Main.storyboard */; };
+		366ABFC32168AA600059D84A /* BillboardviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366ABFC22168AA600059D84A /* BillboardviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,6 @@
 		1F62E274212872C500D520A8 /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
 		1F730396210D4E610014BE1D /* ZooPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F730399210D4E610014BE1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F73039E210D4E610014BE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F7303A0210D4E620014BE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F7303A3210D4E620014BE1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F7303A5210D4E620014BE1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +80,8 @@
 		1FDAA8CF21168A850040A204 /* ZooMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooMainCell.swift; sourceTree = "<group>"; };
 		1FF899562114C20300E6CD11 /* UIImageViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtention.swift; sourceTree = "<group>"; };
 		1FFFE356210D515400E95C4B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		366ABFC22168AA600059D84A /* ValueviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueviewController.swift; sourceTree = "<group>"; };
+		364B78162170A208006BCA01 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		366ABFC22168AA600059D84A /* BillboardviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardviewController.swift; sourceTree = "<group>"; };
 		9A15D8815FFE3780CDE17E70 /* Pods-ZooPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooPower.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZooPower/Pods-ZooPower.debug.xcconfig"; sourceTree = "<group>"; };
 		B95D6D30A899BDCE2AEBC6B3 /* Pods-ZooPower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZooPower.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZooPower/Pods-ZooPower.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -176,7 +176,7 @@
 				1F62E272212870D800D520A8 /* RecordController.swift */,
 				1F3B67BD21451367008C67E1 /* distancePopController.swift */,
 				1F3B67BF214516EE008C67E1 /* timePopController.swift */,
-				366ABFC22168AA600059D84A /* ValueviewController.swift */,
+				366ABFC22168AA600059D84A /* BillboardviewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 		1FFFE355210D511B00E95C4B /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1F73039D210D4E610014BE1D /* Main.storyboard */,
+				364B78162170A208006BCA01 /* Main.storyboard */,
 				1F7303A2210D4E620014BE1D /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -277,8 +277,8 @@
 				1F024F412145EE430028D47E /* America.gpx in Resources */,
 				1F490181214658DD00009A0E /* DJB Chalk It Up.ttf in Resources */,
 				1F7303A1210D4E620014BE1D /* Assets.xcassets in Resources */,
-				1F73039F210D4E610014BE1D /* Main.storyboard in Resources */,
 				1F7303AC210D500D0014BE1D /* GoogleService-Info.plist in Resources */,
+				364B78172170A208006BCA01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +386,7 @@
 				1F92CE142118384900BCB937 /* ZooCollectionController.swift in Sources */,
 				1F62E275212872C500D520A8 /* RecordCell.swift in Sources */,
 				1FBCE19B212424820030764C /* RunDetailsController.swift in Sources */,
-				366ABFC32168AA600059D84A /* ValueviewController.swift in Sources */,
+				366ABFC32168AA600059D84A /* BillboardviewController.swift in Sources */,
 				1F3B67C0214516EE008C67E1 /* timePopController.swift in Sources */,
 				1FFFE357210D515400E95C4B /* LoginController.swift in Sources */,
 				1F999E3F2116199000C9A1C0 /* ZooController.swift in Sources */,
@@ -398,14 +398,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F73039D210D4E610014BE1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F73039E210D4E610014BE1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F7303A2210D4E620014BE1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
